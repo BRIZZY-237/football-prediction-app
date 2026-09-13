@@ -60,12 +60,39 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 30),
+
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => const PredictionsPage(),
+                    ),
+                  );
+                },
                 child: const Text('View Predictions'),
               ),
             ],
           ),
+        ),
+      ),
+    );
+  }
+}
+
+class PredictionsPage extends StatelessWidget {
+  const PredictionsPage({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Predictions'),
+      ),
+      body: const Center(
+        child: Text(
+          'Football Predictions Coming Soon',
+          style: TextStyle(fontSize: 20),
         ),
       ),
     );
