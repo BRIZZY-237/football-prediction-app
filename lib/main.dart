@@ -60,7 +60,6 @@ class HomePage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               const SizedBox(height: 30),
-
               ElevatedButton(
                 onPressed: () {
                   Navigator.push(
