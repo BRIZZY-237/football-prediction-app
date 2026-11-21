@@ -201,6 +201,71 @@ class _BrizzyHomeState extends State<BrizzyHome> {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
+    Padding(
+  padding: const EdgeInsets.only(bottom: 16),
+  child: Container(
+    width: double.infinity,
+    padding: const EdgeInsets.all(18),
+    decoration: BoxDecoration(
+      color: const Color(0xFF14251D),
+      borderRadius: BorderRadius.circular(18),
+      border: Border.all(
+        color: const Color(0xFFFFC44D),
+      ),
+    ),
+    child: Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        const Row(
+          children: [
+            Icon(
+              Icons.sports_esports,
+              color: Color(0xFFFFC44D),
+              size: 28,
+            ),
+            SizedBox(width: 10),
+            Expanded(
+              child: Text(
+                'FIFA CORRECT SCORES',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Color(0xFFFFC44D),
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 12),
+        const Text(
+          'FIFA MATCH CENTRE',
+          style: TextStyle(
+            color: Colors.white,
+            fontWeight: FontWeight.bold,
+          ),
+        ),
+        const SizedBox(height: 6),
+        const Text(
+          'Match listings, recorded scores, '
+          'historical results and score analysis.',
+          style: TextStyle(
+            color: Colors.white70,
+            fontSize: 13,
+          ),
+        ),
+        const SizedBox(height: 12),
+        const Text(
+          'FIFA score data will appear here '
+          'when connected to a data source.',
+          style: TextStyle(
+            color: Colors.lightGreenAccent,
+            fontSize: 12,
+          ),
+        ),
+      ],
+    ),
+  ),
+),
           Container(
             width: double.infinity,
             padding: const EdgeInsets.all(20),
