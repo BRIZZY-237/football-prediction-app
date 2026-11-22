@@ -198,8 +198,7 @@ class _BrizzyHomeState extends State<BrizzyHome> {
   Widget dashboard() {
     return SingleChildScrollView(
       padding: const EdgeInsets.all(16),
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+      child: Column(        crossAxisAlignment: CrossAxisAlignment.start,
         children: [
     Padding(
   padding: const EdgeInsets.only(bottom: 16),
@@ -254,14 +253,40 @@ class _BrizzyHomeState extends State<BrizzyHome> {
           ),
         ),
         const SizedBox(height: 12),
-        const Text(
-          'FIFA score data will appear here '
-          'when connected to a data source.',
-          style: TextStyle(
-            color: Colors.lightGreenAccent,
-            fontSize: 12,
-          ),
-        ),
+        
+const Column(
+  crossAxisAlignment: CrossAxisAlignment.start,
+  children: [
+    Text(
+      '1. FIFA VIRTUAL FOOTBALL',
+      style: TextStyle(
+        color: Colors.lightGreenAccent,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    SizedBox(height: 8),
+    Text(
+      'Virtual match listings, recorded results and correct-score analysis.',
+      style: TextStyle(color: Colors.white70, fontSize: 13),
+    ),
+    SizedBox(height: 18),
+    Text(
+      '2. INTERNATIONAL FOOTBALL',
+      style: TextStyle(
+        color: Colors.lightGreenAccent,
+        fontSize: 16,
+        fontWeight: FontWeight.bold,
+      ),
+    ),
+    SizedBox(height: 8),
+    Text(
+      'National-team fixtures, match statistics and correct-score analysis.',
+      style: TextStyle(color: Colors.white70, fontSize: 13),
+    ),
+  ],
+),
+
       ],
     ),
   ),
